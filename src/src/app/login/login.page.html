@@ -1,0 +1,33 @@
+<ion-content>
+    <div id="allContainer">
+
+        <div class="contentRegister">
+            <a id="loginButton" routerLink="/login"><b style="opacity: 1.0;color: white;">Login</b></a>
+            <a id="registerButton" routerLink="/register">Registro</a>
+        </div>
+        <div id="form">
+            <ion-card>
+                <ion-item>
+                    <ion-label position="floating">
+                        Email:
+                    </ion-label>
+
+                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">
+                        Password:
+                    </ion-label>
+                    <ion-icon id="iconEyePassword" style="position: relative; top: 5px;" slot="end"
+                              (click)="viewPassword()" name="eye-off"></ion-icon>
+                    <ion-input id="password" type="password" [(ngModel)]="user.password"></ion-input>
+                </ion-item>
+            </ion-card>
+                <ion-button expand="full" fill="outline"  color="success"  (click)="onLogin()">
+                    <ion-icon slot="start" name="arrow-forward"></ion-icon>
+                    Login
+                </ion-button>
+        </div>
+    </div>
+
+</ion-content>

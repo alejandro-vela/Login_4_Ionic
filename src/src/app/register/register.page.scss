@@ -1,0 +1,42 @@
+#loginButton{
+  background-color: white;
+  text-align: center;
+  height: 30px;
+  width: 250px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-color: white;
+  border-bottom-style: solid;
+  text-decoration: none;
+  line-height: 30px;
+}
+#registerButton{
+  text-align: center;
+  height: 30px;
+  width: 250px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-decoration: none;
+  border-color: white;
+  border-bottom-style: solid;
+  color: white;
+  line-height: 30px;
+}
+#form{
+  position: absolute;
+  top: 45%;
+  height: 200px;
+  width: 390px;
+
+}
+.contentRegister{
+  position: relative;
+  top: 40%;
+  display: flex;
+
+}
+#allContainer{
+  background: #1e2023;
+  width: 100%;
+  height: 100%;
+}
